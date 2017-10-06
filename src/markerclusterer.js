@@ -1228,6 +1228,8 @@ ClusterIcon.prototype.createCss = function(pos) {
   style.push('background-image:url(' + this.url_ + ');');
   var backgroundPosition = this.backgroundPosition_ ? this.backgroundPosition_ : '0 0';
   style.push('background-position:' + backgroundPosition + ';');
+  style.push('background-repeat: no-repeat;');
+  style.push('background-overflow: visible;');
 
   if (typeof this.anchor_ === 'object') {
     if (typeof this.anchor_[0] === 'number' && this.anchor_[0] > 0 &&
